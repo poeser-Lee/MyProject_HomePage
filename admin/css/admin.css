@@ -1,0 +1,294 @@
+/*기본적인 폰트*/
+body {
+  margin: 0;
+  font-family: "Source Sans Pro";
+  background-color: rgb(255, 255, 255);
+}
+
+a {
+  font-size: 15px;
+  font-weight: bold;
+}
+.header {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  padding-right: 0;
+}
+
+.header2 {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 10px;
+  margin: 0;
+}
+
+/*전체적 배치 배경 및 로고 작업 Header*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  align-items: center;
+  background: rgb(138, 169, 228);
+}
+
+.navbar_logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar_logo i {
+  color: rgb(255, 255, 255);
+}
+
+/*메뉴 배치작업 및 데코레이션*/
+.navbar_menu {
+  list-style: none;
+  display: flex;
+  padding-left: 0px 8px;
+}
+
+.navbar_menu li {
+  padding: 8px 30px;
+}
+.navbar_menu li:hover {
+  background: rgb(153, 223, 245);
+  border-radius: 4px;
+}
+/*아이콘 작업및 배치*/
+.navbar_icons {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+}
+
+.navbar_icons li {
+  padding: 8px 4px;
+}
+
+.navbar_toggle {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  display: none;
+}
+
+/*Max 픽셀이 줄어듬에따른 배치 변경 내역*/
+@media screen and (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar_menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    display: none; /*display를 None으로*/
+  }
+
+  .navbar_menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar_icons {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navbar_toggle {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+
+  .navbar_menu.active {
+    display: flex; /*디스플레이를 플렉스로 변경한다.*/
+  }
+}
+/*Header End*/
+/*body Start*/
+/* 관리자 회원 목록보기(admin_list.php) */
+#admin_box {
+  width: 800px;
+  margin: 0 auto;
+}
+#admin_box h3#member_title {
+  margin: 30px 0 10px 0;
+}
+#member_list {
+  margin: 10px 0 30px 0;
+}
+#member_list li:nth-child(1) {
+  font-weight: bold;
+  border-top: solid 2px #dddddd;
+  border-bottom: solid 2px #dddddd;
+  background-color: #eeeeee;
+}
+#member_list li {
+  padding: 5px;
+  width: 700px;
+  margin-left: 0 auto;
+  border-bottom: solid 1px #dddddd;
+}
+#member_list span {
+  display: inline-block;
+  text-align: center;
+}
+#member_list input {
+  width: 40px;
+  height: 20px;
+  text-align: center;
+}
+#member_list button {
+  padding: 3px 10px;
+}
+#member_list .col1 {
+  width: 80px;
+}
+#member_list .col2 {
+  width: 100px;
+}
+#member_list .col3 {
+  width: 100px;
+}
+#member_list .col4 {
+  width: 140px;
+}
+#member_list .col5 {
+  width: 100px;
+}
+#member_list .col6 {
+  width: 100px;
+}
+#member_list .col7 {
+  width: 70px;
+}
+#member_list .col8 {
+  width: 70px;
+}
+#admin_box h3#board_title {
+  margin: 30px 0 10px 0;
+}
+#board_list {
+  width: 700px;
+}
+#board_list .col1 {
+  width: 50px;
+}
+#board_list .col2 {
+  width: 60px;
+}
+#board_list .col3 {
+  width: 80px;
+}
+#board_list .col4 {
+  width: 320px;
+}
+#board_list .col5 {
+  width: 80px;
+}
+#board_list .col6 {
+  width: 90px;
+}
+#board_list li.title {
+  font-weight: bold;
+  border-top: solid 2px #dddddd;
+  border-bottom: solid 2px #dddddd;
+  background-color: #eeeeee;
+}
+#board_list li.title span.col4 {
+  text-align: center;
+}
+#board_list li {
+  padding: 10px 0;
+  border-bottom: solid 1px #dddddd;
+}
+#board_list span {
+  display: inline-block;
+  text-align: center;
+}
+#board_list button {
+  margin: 20px 0 0 20px;
+  padding: 5px 10px;
+}
+
+.columnchart_material {
+  margin: 0 auto;
+  right: 1200px;
+}
+
+/*footer start*/
+footer {
+  display: flex;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-left: 30px;
+  width: 1200px;
+  height: 280px;
+}
+.h3 {
+  margin: 0%;
+}
+
+footer div {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+footer div.logo i {
+  color: orange;
+  font-size: 2rem;
+  font-weight: 700;
+  align-items: center;
+}
+
+footer ul.features-content {
+  list-style: none;
+  line-break: auto;
+  padding: 0;
+}
+
+footer ul.features-content li {
+  font-weight: 100;
+  font-size: 15px;
+}
+footer {
+  display: flex;
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 1000px;
+  height: 280px;
+  align-items: center;
+}
+.h3 {
+  margin: 0%;
+}
+
+footer div {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+footer div.logo i {
+  color: orange;
+  font-size: 2rem;
+  font-weight: 700;
+  align-items: center;
+}
+
+footer ul.features-content {
+  list-style: none;
+  line-break: auto;
+  padding: 0;
+}
+
+footer ul.features-content li {
+  font-weight: 100;
+  font-size: 15px;
+}
+/*footer End*/

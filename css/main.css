@@ -1,0 +1,231 @@
+/*기본적인 폰트*/
+body {
+  margin: 0;
+  font-family: "Source Sans Pro";
+  background-color: rgb(255, 255, 255);
+}
+.header {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 15px;
+  padding-right: 0;
+}
+
+.header2 {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 10px;
+  margin: 0;
+}
+
+/*전체적 배치 배경 및 로고 작업 Header*/
+.navbar {
+  display: flex;
+  width: auto;
+  justify-content: space-between;
+  padding: 5px 10px;
+  align-items: center;
+  background: rgb(138, 169, 228);
+}
+
+.navbar_logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar_logo i {
+  color: rgb(255, 255, 255);
+}
+
+/*메뉴 배치작업 및 데코레이션*/
+.navbar_menu {
+  list-style: none;
+  display: flex;
+  padding-left: 0px;
+}
+
+.navbar_menu li {
+  padding: 8px 30px;
+}
+.navbar_menu li:hover {
+  background: rgb(153, 223, 245);
+  border-radius: 4px;
+}
+/*아이콘 작업및 배치*/
+.navbar_icons {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+}
+
+.navbar_icons li {
+  padding: 8px 4px;
+}
+
+.navbar_toggle {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  display: none;
+}
+
+/*Max 픽셀이 줄어듬에따른 배치 변경 내역*/
+@media screen and (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar_menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    display: none; /*display를 None으로*/
+  }
+
+  .navbar_menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar_icons {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navbar_toggle {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+
+  .navbar_menu.active {
+    display: flex; /*디스플레이를 플렉스로 변경한다.*/
+  }
+}
+/*Header End*/
+
+/*Main Content Start*/
+#main_content {
+  position: relative;
+  width: 700px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+/*알림 마당*/
+#invitation {
+  position: absolute;
+  width: 500px;
+  right: 600px;
+  top: 30px;
+  margin: 0 auto;
+}
+#invitation h4 {
+  width: 400px;
+  font-size: 16px;
+  padding-bottom: 5px;
+  margin-left: 25px;
+  border-bottom: solid 1px #dddddd;
+}
+#invitation ul {
+  margin-top: 20px;
+  margin-left: 3px;
+}
+#invitation li {
+  margin-top: 8px;
+}
+#invitation span {
+  font-size: 13px;
+  display: inline-block;
+}
+#invitation span:nth-child(1) {
+  width: 300px;
+}
+
+#invitation span:nth-child(2) {
+  width: 70px;
+}
+
+#invitation span:nth-child(3) {
+  width: 80px;
+}
+
+/*학생 마당*/
+#boardstudent {
+  position: absolute;
+  width: 500px;
+  right: 80px;
+  top: 30px;
+  margin: 0 auto;
+}
+#boardstudent h4 {
+  width: 400px;
+  font-size: 16px;
+  padding-bottom: 5px;
+  margin-left: 25px;
+  border-bottom: solid 1px #dddddd;
+}
+#boardstudent ul {
+  margin-top: 20px;
+  margin-left: 3px;
+}
+#boardstudent li {
+  margin-top: 8px;
+}
+#boardstudent span {
+  font-size: 13px;
+  display: inline-block;
+}
+
+#boardstudent span:nth-child(1) {
+  width: 250px;
+}
+
+#boardstudent span:nth-child(2) {
+  width: 70px;
+}
+
+#boardstudent span:nth-child(3) {
+  width: 80px;
+}
+
+/*학부모 마당*/
+#boardparent {
+  position: absolute;
+  width: 500px;
+  left: 600px;
+  top: 30px;
+  margin: 0 auto;
+}
+#boardparent h4 {
+  width: 400px;
+  font-size: 16px;
+  padding-bottom: 5px;
+  margin-left: 25px;
+  border-bottom: solid 1px #dddddd;
+}
+#boardparent ul {
+  margin-top: 20px;
+  margin-left: 3px;
+}
+#boardparent li {
+  margin-top: 8px;
+}
+#boardparent span {
+  font-size: 12px;
+  display: inline-block;
+}
+#boardparent span:nth-child(1) {
+  width: 300px;
+}
+
+#boardparent span:nth-child(2) {
+  width: 70px;
+}
+
+#boardparent span:nth-child(3) {
+  width: 80px;
+}

@@ -1,0 +1,243 @@
+/*기본적인 폰트*/
+body {
+  margin: 0;
+  font-family: "Source Sans Pro";
+  background-color: rgb(255, 255, 255);
+}
+
+a {
+  font-size: 15px;
+  font-weight: bold;
+}
+.header {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  padding-right: 0;
+}
+
+.header2 {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 10px;
+  margin: 0;
+}
+
+/*전체적 배치 배경 및 로고 작업 Header*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  align-items: center;
+  background: rgb(138, 169, 228);
+}
+
+.navbar_logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar_logo i {
+  color: rgb(255, 255, 255);
+}
+
+/*메뉴 배치작업 및 데코레이션*/
+.navbar_menu {
+  list-style: none;
+  display: flex;
+  padding-left: 0px 8px;
+}
+
+.navbar_menu li {
+  padding: 8px 30px;
+}
+.navbar_menu li:hover {
+  background: rgb(153, 223, 245);
+  border-radius: 4px;
+}
+/*아이콘 작업및 배치*/
+.navbar_icons {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+}
+
+.navbar_icons li {
+  padding: 8px 4px;
+}
+
+.navbar_toggle {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  display: none;
+}
+
+/*Max 픽셀이 줄어듬에따른 배치 변경 내역*/
+@media screen and (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar_menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    display: none; /*display를 None으로*/
+  }
+
+  .navbar_menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar_icons {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navbar_toggle {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+
+  .navbar_menu.active {
+    display: flex; /*디스플레이를 플렉스로 변경한다.*/
+  }
+}
+/*Header End*/
+/*body Start*/
+.main_content {
+  display: flex;
+  height: 600px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_box {
+  width: 429px;
+  margin: 0 auto;
+}
+.login_title {
+  margin: 50px 0 0 0;
+  padding-bottom: 5px;
+  border-bottom: solid 2px #ffbe10;
+}
+.login_title span {
+  font-size: 20px;
+  font-weight: bold;
+}
+.login_form {
+  margin-top: 20px;
+  margin-left: 0 auto;
+}
+.login {
+  width: 350px;
+  height: 25px;
+}
+
+.login_form li {
+  margin-top: 10px;
+}
+#login_form input {
+  width: 100%;
+  height: 47px;
+}
+.login_btn {
+  margin: 0 auto;
+  text-align: center;
+}
+.btn {
+  background: rgb(133, 250, 142);
+  width: 250px;
+  height: 50px;
+  margin: 0 auto;
+  right: 500px;
+}
+.btn :hover {
+  background: chartreuse;
+}
+
+.autologin {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+/*body End*/
+
+/*footer start*/
+footer {
+  display: flex;
+  margin: 0 auto;
+  padding-top: 200px;
+  width: 1000px;
+  height: 280px;
+  align-items: center;
+}
+.h3 {
+  margin: 0%;
+}
+
+footer div {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+footer div.logo i {
+  color: orange;
+  font-size: 2rem;
+  font-weight: 700;
+  align-items: center;
+}
+
+footer ul.features-content {
+  list-style: none;
+  line-break: auto;
+  padding: 0;
+}
+
+footer ul.features-content li {
+  font-weight: 100;
+  font-size: 15px;
+}
+footer {
+  display: flex;
+  margin: 0 auto;
+  padding: 0%;
+  width: 1000px;
+  height: 280px;
+  align-items: center;
+}
+.h3 {
+  margin: 0%;
+}
+
+footer div {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+footer div.logo i {
+  color: orange;
+  font-size: 2rem;
+  font-weight: 700;
+  align-items: center;
+}
+
+footer ul.features-content {
+  list-style: none;
+  line-break: auto;
+  padding: 0;
+}
+
+footer ul.features-content li {
+  font-weight: 100;
+  font-size: 15px;
+}
+/*footer End*/

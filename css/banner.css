@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+.slideshow {
+  background: rgb(255, 255, 255);
+  margin: 0 auto;
+  width: 1450px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slideshow_sildes {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.slideshow_sildes .animated {
+  -webkit-transition: left 0.3 ease-in;
+  transition: left 0.3s ease-in;
+}
+
+.slideshow_sildes a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.slideshow_nav a {
+  width: 71px;
+  height: 71px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background: url("../img/sprites.png") no-repeat;
+  text-indent: -9999em;
+}
+
+.slideshow_nav a.prev {
+  background-position: 0 -20px;
+  margin-left: -700px;
+}
+
+.slideshow_nav a.disabled {
+  display: none;
+}
+
+.slideshow_nav a.next {
+  background-position: -80px -20px;
+  margin-left: 700px;
+}
